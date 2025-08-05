@@ -1,27 +1,32 @@
 {
   "name": "find-my-iphone",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "description": "Trigger Apple's Find My iPhone feature from code",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "jest"
   },
-  "author": "Matt Kruse <github@mattkruse.com> (http://mattkruse.com/)",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcostevanon/find-my-iphone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marcostevanon/find-my-iphone/issues"
+  },
+  "homepage": "https://github.com/marcostevanon/find-my-iphone#readme",
   "keywords": [
     "icloud",
     "iphone",
-    "find"
+    "find",
+    "apple",
+    "location"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/matt-kruse/find-my-iphone.git"
-  },
-  "bugs": {
-    "url": "https://github.com/matt-kruse/find-my-iphone/issues"
-  },
   "license": "MIT",
   "dependencies": {
     "axios": "^1.6.0"
